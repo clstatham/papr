@@ -1,0 +1,18 @@
+[package]
+name = "papr"
+version = "0.1.0"
+edition = "2021"
+description = "PAPR Audio Processor Runtime"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.70"
+clap = { version = "4.2.4", features = ["derive"] }
+cpal = { version = "0.15.2", features = ["jack"] }
+env_logger = "0.10.0"
+log = "0.4.17"
+petgraph = "0.6.3"
+rustc-hash = "1.1.0"
+tokio = { version = "1.28.0", features = ["full"] }
+typed-arena = "2.0.2"
