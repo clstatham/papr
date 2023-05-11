@@ -9,7 +9,7 @@ description = "PAPR Audio Processor Runtime"
 [dependencies]
 anyhow = "1.0.70"
 clap = { version = "4.2.4", features = ["derive"] }
-cpal = { version = "0.15.2", features = ["jack"] }
+cpal = { version = "0.15.2" }
 env_logger = "0.10.0"
 log = "0.4.17"
 petgraph = "0.6.3"

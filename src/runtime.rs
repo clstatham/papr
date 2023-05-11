@@ -146,13 +146,13 @@ impl Runtime {
     where
         F: Future<Output = Result<()>> + Send + 'static,
     {
-        let rt = self.tokio_rt.take().ok_or(Error::msg("Cannot start PAAPR runtime: inner Tokio runtime not present, is the PAAPR runtime already running?"))?;
+        let rt = self.tokio_rt.take().ok_or(Error::msg("Cannot start PAPR runtime: inner Tokio runtime not present, is the PAPR runtime already running?"))?;
         let stream = self.stream.as_ref().ok_or(Error::msg(
-            "Cannot start PAAPR output stream: inner CPAL stream not present",
+            "Cannot start PAPR output stream: inner CPAL stream not present",
         ))?;
         stream.play()?;
         std::thread::Builder::new()
-            .name("paapr-runtime".into())
+            .name("papr-runtime".into())
             .spawn(move || {
                 rt.block_on(f)?;
                 Ok::<(), anyhow::Error>(())

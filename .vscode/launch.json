@@ -7,7 +7,7 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug executable 'paapr'",
+            "name": "Debug executable 'papr'",
             "env": {
                 "RUST_LOG": "debug",
                 "RUST_BACKTRACE": "1",
@@ -15,11 +15,11 @@
             "cargo": {
                 "args": [
                     "build",
-                    "--bin=paapr",
-                    "--package=paapr"
+                    "--bin=papr",
+                    "--package=papr"
                 ],
                 "filter": {
-                    "name": "paapr",
+                    "name": "papr",
                     "kind": "bin"
                 }
             },
@@ -29,7 +29,7 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug unit tests in executable 'paapr'",
+            "name": "Debug unit tests in executable 'papr'",
             "env": {
                 "RUST_LOG": "debug",
                 "RUST_BACKTRACE": "1",
@@ -38,11 +38,11 @@
                 "args": [
                     "test",
                     "--no-run",
-                    "--bin=paapr",
-                    "--package=paapr"
+                    "--bin=papr",
+                    "--package=papr"
                 ],
                 "filter": {
-                    "name": "paapr",
+                    "name": "papr",
                     "kind": "bin"
                 }
             },

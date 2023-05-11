@@ -273,7 +273,6 @@ dependencies = [
  "core-foundation-sys 0.8.4",
  "coreaudio-rs",
  "dasp_sample",
- "jack",
  "jni 0.19.0",
  "js-sys",
  "libc",
@@ -405,33 +404,6 @@ dependencies = [
  "io-lifetimes",
  "rustix",
  "windows-sys 0.48.0",
-]
-
-[[package]]
-name = "jack"
-version = "0.11.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0e5a18a3c2aefb354fb77111ade228b20267bdc779de84e7a4ccf7ea96b9a6cd"
-dependencies = [
- "bitflags",
- "jack-sys",
- "lazy_static",
- "libc",
- "log",
-]
-
-[[package]]
-name = "jack-sys"
-version = "0.5.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6013b7619b95a22b576dfb43296faa4ecbe40abbdb97dfd22ead520775fc86ab"
-dependencies = [
- "bitflags",
- "lazy_static",
- "libc",
- "libloading",
- "log",
- "pkg-config",
 ]
 
 [[package]]
